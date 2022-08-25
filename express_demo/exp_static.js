@@ -12,3 +12,5 @@ app.get("/", (req, resp) => {
 app.listen(8081, (req, resp) => {
   console.log("～～～～");
 });
+// 也可以托管vue打包后的dist文件
+// app.use(express.static("dist"));

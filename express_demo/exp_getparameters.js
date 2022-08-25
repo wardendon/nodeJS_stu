@@ -21,6 +21,7 @@ app.get("/process_get", function (req, res) {
 
 // 获取post请求的参数 req.body
 app.post("/process_post", urlencodedParser, function (req, res) {
+  res.writeHead(200, { "Content-Type": "text/html;charset=utf-8" }); //设置response编码为utf-8
   // 输出 JSON 格式
   let response = {
     first_name: req.body.first_name,
